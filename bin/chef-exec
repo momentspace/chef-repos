@@ -1,4 +1,7 @@
 #!/bin/bash
 
-chef-solo -c ${REPO_DIR}/config/solo.rb -j ${RUN_LIST_FILE}
+REPO_DIR=~/chef-repos/
+RUN_LIST_FILE=${REPO_DIR}/.chef/chef.json
+chef-solo -c ${REPO_DIR}/.chef/solo.rb -j ${RUN_LIST_FILE}
+
 
