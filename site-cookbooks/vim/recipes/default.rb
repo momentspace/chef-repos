@@ -36,9 +36,9 @@ git neobundle_file do
   group node[:vim][:group]
 end
 
-execute "vim +':NeoBundleInstall' +:q" do
-  action :run
-  user node[:vim][:user]
-  group node[:vim][:group]
-end
+#execute "vim +':NeoBundleInstall' +:q" do
+#  action :run
+#  user node[:vim][:user]
+#  group node[:vim][:group]
+#end
 
