@@ -8,7 +8,8 @@
 #
 
 dotfiles_repos = "https://github.com/momentspace/dotfiles.git"
-git node[:dotfiles][:dir] do
+dotfiles_dir = File.join(node[:dotfiles][:dir], "dotfiles")
+git dotfiles_dir do
   repository dotfiles_repos
   action :sync
   user node[:dotfiles][:user]
