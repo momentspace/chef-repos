@@ -1,2 +1,2 @@
 file_cache_path "tmp/chef-solo"
-cookbook_path "/home/moment/chef-repos/site-cookbooks"
+cookbook_path File.expand_path("~/chef-repos/site-cookbooks")
